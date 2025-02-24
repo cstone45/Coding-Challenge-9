@@ -11,6 +11,7 @@ class Employee {
     }
     calculateAnnualSalary() {
         let annualSalary = this.salary * 12
+        if (Manager = true, annualSalary = (this.Salary * 12) * 0.10)
         return annualSalary
     }
 };
@@ -47,8 +48,14 @@ class Company {
     listEmployees() {
         this.employees.forEach(emp => console.log(emp.getDetails()));
     }
+    calculateTotalPayroll() {
+        this.salary.forEach(emp => console.log(emp.salary + emp.salary));
+    }
 };
 const company = new Company("TechCorp");
 company.addEmployee(emp1);
 company.addEmployee(mgr1);
 company.listEmployees();
+
+//Task 4: Implementing a Payroll System
+console.log(company.calculateTotalPayroll());
